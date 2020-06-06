@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">           
+</head>
+<body style="background-color: #E9E9E9;">
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #62BA67">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../../../assets/icon-mega-sena.png" width="30" height="30" alt="">
+                    Mega-Sena
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar10">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item">
+                          <a class="nav-link" href="heuristicas.html">Heurísticas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="aposta.html">Faça sua aposta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gerador.html">Gerador de jogos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="historico.html">Histórico</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container my-5" style="min-width: 800px; min-height: 400px;">    
+        <div class="container mt-5 border border-dark rounded text-center p-5" style="background-color: #89C48C; max-width: 1000px; min-height: 400px;" id="caixa">
+            <h1>Pesquise o resultado de um concurso</h1>
+            <div class="row m-5">
+                <div class="col input-group">
+                    <input type="number" class="form-control" placeholder="Digite o número do concurso" id="searchBar">
+                    <div class="invalid-tooltip">
+                        Concurso Inexistente
+                    </div>  
+                </div>
+                <div class="col">
+                  <input type="button" class="form-control" value="Pesquisar">
+                </div>
+            </div>
+
+            <div class="row p-4" id="concursoPesquisado">
+                <div class="col-4">
+                    
+                </div>
+
+                <div class="col-4">
+                    
+                </div>
+
+                <div class="col-4">
+                    
+                </div>
+            </div>
+
+            <h1>Dez últimos concursos</h1>
+
+            <div class="row p-4">
+                <div class="col-4">
+                    <h2>Número do Concurso</h2>
+                </div>
+
+                <div class="col-4">
+                    <h2>Dezenas sorteadas</h2>
+                </div>
+
+                <div class="col-4">
+                    <h2>Data do Concurso</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="../js/historico.js"></script>        
+</body>
+</html>
